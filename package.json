@@ -1,15 +1,20 @@
 {
-  "version": "0.1.0",
-  "homepage": "https://github.com/jaredjbarnes/undefined#readme",
-  "repository": "github:jaredjbarnes/undefined",
-  "bugs": "https://github.com/jaredjbarnes/undefined/issues",
+  "name": "@accessible/use-key",
+  "version": "1.0.0",
+  "homepage": "https://github.com/accessible-ui/use-keycode#readme",
+  "repository": "github:accessible-ui/use-keycode",
+  "bugs": "https://github.com/accessible-ui/use-keycode/issues",
   "author": "Jared Lunde <jared.lunde@gmail.com> (https://jaredLunde.com)",
   "license": "MIT",
   "description": "A React hook for handling `keydown` events on elements",
   "keywords": [
     "react",
     "react hook",
-    "use key"
+    "use key",
+    "usekey",
+    "keydown hook",
+    "use keydown",
+    "usekeydown"
   ],
   "main": "dist/main/index.js",
   "module": "dist/module/index.js",
@@ -137,7 +142,9 @@
     "standard-version": "latest",
     "typescript": "latest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@react-hook/event": "^1.2.2"
+  },
   "peerDependencies": {
     "react": ">=16.8"
   }
