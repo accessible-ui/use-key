@@ -26,7 +26,7 @@
 <pre align="center">npm i @accessible/use-key</pre>
 <hr>
 
-A React hook for handling `keydown` events on specific `event.key` values. This also
+A React hook for handling `keydown` events on specific `event.key` values. It also
 normalizes non-standard `event.key` values from IE to their modern equivalents.
 
 ## Quick Start
@@ -60,7 +60,7 @@ const Component = () => {
 
 ## API
 
-### `useKey(target, handlers)`
+### useKey(target, handlers)
 
 #### Arguments
 
