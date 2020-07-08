@@ -18,19 +18,28 @@ export function useKey(
   listeners: Record<string, (event: KeyboardEvent) => any>
 ) {
   useEvent(target, 'keydown', (event): void => {
-    const listener = listeners[IE_COMPAT[event.key] || event.key]
+    const listener = listeners[LEGACY_COMPAT[event.key] || event.key]
     if (listener) listener(event)
   })
 }
 
 // IE 11 and some versions of Edge have non-standard value
-const arrow = 'Arrow'
-const IE_COMPAT: Record<string, string> = {
-  Up: arrow + 'Up',
-  Right: arrow + 'Right',
-  Down: arrow + 'Down',
-  Left: arrow + 'Left',
+const LEGACY_COMPAT: Record<string, string> = {
+  Up: 'ArrowUp',
+  Right: 'ArrowRight',
+  Down: 'ArrowDown',
+  Left: 'ArrowLeft',
   Esc: 'Escape',
+  ' ': 'Spacebar',
+  Del: 'Delete',
+  Crsel: 'CrSel',
+  Exsel: 'ExSel',
+  Add: '+',
+  Subtract: '-',
+  Multiply: '*',
+  Divide: '/',
+  Decimal: '.',
+  Scroll: 'ScrollLock',
 }
 
 export default useKey
