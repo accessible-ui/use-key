@@ -30,7 +30,7 @@ const LEGACY_COMPAT: Record<string, string> = {
   Down: 'ArrowDown',
   Left: 'ArrowLeft',
   Esc: 'Escape',
-  ' ': 'Spacebar',
+  Spacebar: ' ',
   Del: 'Delete',
   Crsel: 'CrSel',
   Exsel: 'ExSel',
